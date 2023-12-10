@@ -1,0 +1,42 @@
+@font-face{
+    font-family: "poppins";
+    src: url(Poppins/Poppins-Regular.ttf) format("truetype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 165, 0);
+    font-family: "poppins", arial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div{
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    filter: opacity(0);
+    animation: munculkanPesan 2s 1s forwards;
+}
+
+.pesan img{
+    width: 60%;
+}
+
+@keyframes munculkanPesan {
+    from{
+        filter: opacity(0);
+    } 
+    to{
+        filter: opacity(1);
+    }
+}

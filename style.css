@@ -1,0 +1,54 @@
+@font-face{
+    font-family: "poppins";
+    src: url(Poppins/Poppins-Regular.ttf) format("truetype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width:100vw;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    background-color: rgb(255, 165, 0);
+}
+
+.timer{
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    margin: 25vh auto 0;
+}
+
+h1{
+    font-family:  "poppins", arial;
+}
+
+p{
+    font-size: 2em;
+}
+
+a{
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 30px;
+}
+
+.next-button{
+    display:none;
+    width: 200px;
+    height: 40px;
+    font-size: 1.1em;
+    background-color: rgb(255, 190, 70);
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.next-button:active{
+    background-color: rgba(255, 190, 70, 0.7);
+}

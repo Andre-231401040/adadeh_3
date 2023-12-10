@@ -1,0 +1,138 @@
+@font-face{
+    font-family: "poppins";
+    src: url(Poppins/Poppins-Regular.ttf) format("truetype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    padding: 0 20px;
+    background-color: rgb(255, 165, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.text-container{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.text{
+    width: fit-content;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.text p{
+    display: inline-block;
+    font-size: 3em;
+    color: rgba(0,0,0,0);
+}
+
+.year{
+    width: 100%;
+    margin-left: -100%;
+    animation: geser 1s 12s forwards;
+    background-color: rgb(255, 165, 0);
+}
+
+.year p{
+    display: inline-block;
+    font-size: 3em;
+    color: rgba(0,0,0,1);
+}
+
+.year p:nth-child(4){
+    position: absolute;
+    display: inline-block;
+    animation: hapusDariTampilan 1s 15s forwards;
+}
+
+.year p:nth-child(5){
+    position: absolute;
+    z-index: -5;
+    margin-top: 0;
+    animation: tampilkanEmpat 6s 14s forwards;
+}
+
+.message{
+    filter: opacity(0);
+    margin-top: 2rem;
+    font-family: "poppins", arial;
+    animation: tampilkanSelanjutnya 1s 20s forwards;
+}
+
+.message p{
+    font-size: 2em;
+}
+
+.message a{
+    display: inline-block;
+    width: fit-content;
+    margin-top: 1rem;
+}
+
+.message a button{
+    font-size: 1.3em;
+    width: 150px;
+    background-color: rgb(255, 190, 70);
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@keyframes appear {
+    from {color: rgba(0,0,0,0)}
+    to  {color: rgba(0,0,0,1)}
+}
+
+@keyframes geser {
+    from{
+        margin-left: -100%;
+    }
+    to{
+        margin-left: 0;
+    }
+}
+
+@keyframes tampilkanEmpat {
+    0%{
+        z-index: -5;
+        margin-top: 0;
+    }
+    50%{
+        z-index: 5;
+        margin-top: 3rem;
+    }
+    100%{
+        z-index: 5;
+        margin-top: 0;
+    }
+}
+
+@keyframes hapusDariTampilan {
+    from{
+        display: inline-block;
+    }
+    to{
+        display: none;
+    }
+}
+
+@keyframes tampilkanSelanjutnya {
+    from{
+        filter: opacity(0);
+    }
+    to{
+        filter: opacity(1);
+    }
+}
