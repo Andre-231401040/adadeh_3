@@ -1,4 +1,4 @@
-const targetedDate = new Date("10 December 2023 20:10:00").getTime();
+const targetedDate = new Date("1 January 2024 00:00:00").getTime();
 
 let timer = setInterval(function(){
     let now = new Date().getTime();
